@@ -1,0 +1,75 @@
+html,body,
+p,
+ul,
+li,
+h3 {
+    margin: 0;
+    padding: 0;
+    color: #050505;
+    font-size: 20px;
+    font-family: "PingFangSC-Regular", "Microsoft YaHei";
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #308ce8;
+    border: 0;
+}
+
+html, body {
+    width: 100%;
+    /*height: 100%;*/
+    -webkit-user-select: text;
+}
+
+input {
+    outline-style: none;
+    border: 0;
+    border: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.wifi-symbol {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*background: pink;*/
+}
+
+.wifi-symbol img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.wifi-symbol .imgfirst.active {
+    animation: fadeInOut 1s infinite 0s;
+}
+
+.wifi-symbol .imglast.active {
+    animation: fadeInOut 1s infinite 0.2s;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+
+
